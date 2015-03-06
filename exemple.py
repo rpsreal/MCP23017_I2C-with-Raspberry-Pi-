@@ -5,6 +5,9 @@ from MCP23017_I2C import *
 port_expander=[0x20, 0x00,0x00,0x00,0x00, 1] 
 #   Device address, -R-, -R-, -R-, -R-, Pi Model
 # 0 = Model A, B Rev 2 or B+ Pi ; 1 = Model B Rev 1 Pi) 
+### You can define anoder chip writing, for exemple: 
+#port_expander2=[0x21, 0x00,0x00,0x00,0x00, 1] 
+#port_expander2 = GPIO_CHIP_SETUP( 0, 'OUT', 'A', port_expander2) # configure GPA0 of chip 2 like output
 
 
 port_expander = GPIO_CHIP_SETUP( 0, 'OUT', 'A', port_expander) # configure GPA0 like output
