@@ -38,7 +38,7 @@ class GPIO_CHIP:
 		try:
 
 			if (pin<0 or pin>7) or (side!='A' and side!='B') or (io!='IN' and io!='OUT'):
-				print ' --- GPIO_CHIP_SETUP(pin, io, side, port_expander) ---'
+				print ' --- GPIO.setup(pin, io, side) ---'
 				print ' --- pin (0 - 7)  io (IN or OUT)  side (A or B) ---'
 				return;
 			else:
@@ -78,7 +78,7 @@ class GPIO_CHIP:
 		try:
 	
 			if (pin<0 or pin>7) or (side!='A' and side!='B') or (hl!=1 and hl!=0):
-				print ' --- GPIO_CHIP_WRITE(pin, hl, side, port_expander) ---'
+				print ' --- GPIO.output(pin, hl, side) ---'
 				print ' --- pin (0 - 7)  hl (0 or 1)  side (A or B) ---'
 				return;
 			else:
@@ -114,7 +114,7 @@ class GPIO_CHIP:
 	# 	pin (0,7)  side (A,B)
 		try:
 			if (pin<0 or pin>7) or (side!='A' and side!='B'):
-				print ' --- MySwitch = GPIO_CHIP_READ(pin, side, port_expander) ---'
+				print ' --- MySwitch = GPIO.input(pin, side) ---'
 				print ' --- pin (0 - 7)  side (A or B) ---'
 				return;
 			else:
