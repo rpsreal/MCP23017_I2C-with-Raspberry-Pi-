@@ -4,7 +4,7 @@ Python library to control the MCP23017 GPIO
 Install this first:
 sudo apt-get install -y python-smbus i2c-tools
 
-[Wiring]
+Wiring
 ![alt text](https://meocloud.pt/link/53a9d98a-c33e-407a-9480-a237ce9e8351/esquema.png/)
 
 With this library you can use the chip with simple commands, like:
