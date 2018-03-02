@@ -5,7 +5,7 @@ Install this first:
 sudo apt-get install -y python-smbus i2c-tools
 
 Wiring
-![alt text](https://meocloud.pt/link/53a9d98a-c33e-407a-9480-a237ce9e8351/esquema.png/)
+![alt text](https://cld.pt/dl/download/53a9d98a-c33e-407a-9480-a237ce9e8351/esquema.png)
 
 With this library you can use the chip with simple commands, like:
 -  GPIO.setup( 0, 'OUT', 'A')     # to configure GPA0 like output
